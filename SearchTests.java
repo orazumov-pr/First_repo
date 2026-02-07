@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SearchTests {
     @Test
     void successfulSearchTest() {
-        open("https://https://dzen.ru//");
+        open("https://dzen.ru//");
         $("[name=q]").setValue("selenide").pressEnter();
         $("[id=search]").shouldHave(text("https://selenide.org"));
     }
